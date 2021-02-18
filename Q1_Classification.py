@@ -84,6 +84,7 @@ error_num_D1 = np.sum([y_hat1 != output_D1])
 error_rate_D1 = error_num_D1 / len(output_D1)
 print("error_rate_D1: %f " % error_rate_D1)
 # print(metrics.accuracy_score(y_hat1, output_D1))
+
 # Decision Tree D2
 output_D2 = D2_prime['class']    # the predict result is 'class'
 input_D2 = D2_prime.drop(['class'], axis=1)  # the input is the 13 attribute except 'class'
@@ -96,3 +97,4 @@ error_num_D2 = 0
 error_num_D2 = np.sum([y_hat2 != output_D2])
 error_rate_D2 = error_num_D2 / len(output_D2)
 print("error_rate_D2: %f " % error_rate_D2)
+# print(metrics.accuracy_score(y_hat2, output_D2))
